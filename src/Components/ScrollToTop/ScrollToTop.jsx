@@ -28,9 +28,19 @@ const ScrollToTop = () => {
                 position:"fixed",
                 bottom:"50px",
                 right:"5px",
-                height:"50px",
-                width:"50px",
-                fontSize:"50px",
+                height:"30px",
+                width:"30px",
+                fontSize:"30px",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                borderRadius: "50%",
+                background: "#008DDA",
+                color: "#fff",
+                border: "none",
+                cursor: "pointer",
+                zIndex: "9999",
+                padding:"5px"
             }}
             onClick={scrollUp}
             ><AiFillCaretUp size={30} /></button>
