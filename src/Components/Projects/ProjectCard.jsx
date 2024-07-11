@@ -17,7 +17,7 @@ const ProjectCard = ({ singleProject }) => {
           <img
             src={singleProject.image}
             alt=""
-            className="w-full h-auto object-cover rounded-t-lg"
+            className="w-full h-full object-fit rounded-t-lg"
           />
           {!isHovered && (
             <div className="absolute inset-0 flex flex-col justify-center items-center px-4 py-6">
@@ -40,7 +40,7 @@ const ProjectCard = ({ singleProject }) => {
                 href={singleProject.liveLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="  text-white rounded hover:bg-blue-600 transition-colors duration-300"
+                className="  text-primary rounded hover:scale-110 transition-colors duration-300"
               >
                 <BiPlayCircle size={25} />
               </a>
@@ -49,7 +49,7 @@ const ProjectCard = ({ singleProject }) => {
                 href={singleProject.githubLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className=" text-white rounded hover:bg-gray-800 transition-colors duration-300"
+                className=" text-primary rounded hover:scale-110 transition-colors duration-300"
               >
                 <FaGithub className="" size={25} />
               </a>
