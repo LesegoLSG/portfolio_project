@@ -1,6 +1,7 @@
 import Graduation from "../../Assets/Graduation.jpg";
 import Food from "../../Assets/ProjectImages/Food.png";
 import EgoHero from "../../Assets/ProjectImages/EgoHero.png";
+import ChatHiveImage from "../../Assets/ProjectImages/ChatHiveImage.png";
 
 const projectsList = [
   {
@@ -22,11 +23,12 @@ const projectsList = [
   },
   {
     id: 3,
-    image: Graduation,
-    title: "Project 2",
-    description: "Description of Project 2",
-    liveLink: "https://example.com/project2",
-    githubLink: "https://github.com/project2",
+    image: ChatHiveImage,
+    title: "Chat Application",
+    description:
+      "ChatHive is a real-time chat application that allows users with a Google account to seamlessly connect and communicate. Utilizing Firebase for authentication and database storage, ChatHive ensures a secure and efficient messaging experience. ",
+    liveLink: "https://chatapplication-98e8b.web.app/",
+    githubLink: "https://github.com/LesegoLSG/ChatApplication.git",
   },
   {
     id: 4,
