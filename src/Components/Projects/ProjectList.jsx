@@ -2,6 +2,7 @@ import Graduation from "../../Assets/Graduation.jpg";
 import Food from "../../Assets/ProjectImages/Food.png";
 import EgoHero from "../../Assets/ProjectImages/EgoHero.png";
 import ChatHiveImage from "../../Assets/ProjectImages/ChatHiveImage.png";
+import Converter from "../../Assets/ProjectImages/Converter.png";
 
 const projectsList = [
   {
@@ -32,11 +33,12 @@ const projectsList = [
   },
   {
     id: 4,
-    image: Graduation,
-    title: "Project 2",
-    description: "Description of Project 2",
-    liveLink: "https://example.com/project2",
-    githubLink: "https://github.com/project2",
+    image: Converter,
+    title: "Voive-Text Converter",
+    description:
+      "Transform your words effortlessly! Whether you need to convert text to speech or speech to text, our versatile and user-friendly app has got you covered.",
+    liveLink: "https://lesegolsg.github.io/Converter/",
+    githubLink: "https://github.com/LesegoLSG/Converter.git",
   },
   {
     id: 5,

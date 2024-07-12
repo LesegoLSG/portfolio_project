@@ -9,6 +9,7 @@ import typescript from "../../Assets/typescript.png";
 import Git_Github from "../../Assets/Git_Github.png";
 import Vite from "../../Assets/Vite.png";
 import Firebase from "../../Assets/Firebase.png";
+import Amazon from "../../Assets/Amazon.png";
 
 const Skills = () => {
   const skillItems = [
@@ -21,6 +22,7 @@ const Skills = () => {
     { icon: Git_Github, name: "Git & Github" },
     { icon: Vite, name: "Vite" },
     { icon: Firebase, name: "Firebase" },
+    { icon: Amazon, name: "Amazon Web Service" },
   ];
 
   return (
