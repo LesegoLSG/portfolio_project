@@ -102,9 +102,8 @@ const About = () => {
             <br />
             Outside of work, you'll often find me exploring the latest trends in
             technology, seeking inspiration from nature, or immersing myself in
-            the vibrant culture of [Your Location]. Let's embark on a journey
-            together where creativity knows no bounds and possibilities are
-            endless.
+            the vibrant local cultures. Let's embark on a journey together where
+            creativity knows no bounds and possibilities are endless.
           </motion.p>
         </div>
       </div>

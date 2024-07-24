@@ -21,7 +21,7 @@ const ProjectCard = ({ singleProject }) => {
           />
           {!isHovered && (
             <div className="absolute inset-0 flex flex-col justify-center items-center px-4 py-6">
-              <h2 className="text-xl font-semibold mb-2">
+              <h2 className="text-2xl font-bold mb-2 text-secondary">
                 {singleProject.title}
               </h2>
             </div>
@@ -31,10 +31,12 @@ const ProjectCard = ({ singleProject }) => {
               isHovered ? "translate-x-0" : "-translate-x-full"
             }`}
           >
-            <h2 className="text-xl font-semibold mb-2">
+            <h2 className="text-2xl font-bold mb-2 text-secondary">
               {singleProject.title}
             </h2>
-            <p className="text-gray-700 mb-4">{singleProject.description}</p>
+            <p className="text-primary mb-4 font-semibold">
+              {singleProject.description}
+            </p>
             <div className="flex justify-center space-x-4">
               <a
                 href={singleProject.liveLink}

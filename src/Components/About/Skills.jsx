@@ -10,19 +10,29 @@ import Git_Github from "../../Assets/Git_Github.png";
 import Vite from "../../Assets/Vite.png";
 import Firebase from "../../Assets/Firebase.png";
 import Amazon from "../../Assets/Amazon.png";
+import JavaScript from "../../Assets/JavaScript.jpg";
+import html_Css from "../../Assets/html_Css.png";
+import CPlus from "../../Assets/CPlus.png";
+import Hibernate from "../../Assets/Hibernate.png";
+import Maven from "../../Assets/Maven.png";
 
 const Skills = () => {
   const skillItems = [
     { icon: ReactLogo, name: "React" },
     { icon: java, name: "Java" },
-    { icon: springboot, name: "Spring Boot" },
-    { icon: SQL, name: "SQL" },
-    { icon: tailwind, name: "Tailwind CSS" },
     { icon: typescript, name: "TypeScript" },
+    { icon: JavaScript, name: "JavaScript" },
+    { icon: SQL, name: "SQL" },
+    { icon: springboot, name: "Spring Boot" },
+    { icon: tailwind, name: "Tailwind CSS" },
     { icon: Git_Github, name: "Git & Github" },
     { icon: Vite, name: "Vite" },
     { icon: Firebase, name: "Firebase" },
     { icon: Amazon, name: "Amazon Web Service" },
+    { icon: html_Css, name: "HTML & CSS" },
+    { icon: CPlus, name: "C++" },
+    { icon: Hibernate, name: "Hibernate" },
+    { icon: Maven, name: "Maven" },
   ];
 
   return (

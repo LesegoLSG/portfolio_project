@@ -7,14 +7,6 @@ import Converter from "../../Assets/ProjectImages/Converter.png";
 const projectsList = [
   {
     id: 1,
-    image: Food,
-    title: "MealDash",
-    description: "Description of Project 1",
-    liveLink: "https://lesegolsg.github.io/Food-app/",
-    githubLink: "https://github.com/LesegoLSG/Food-app.git",
-  },
-  {
-    id: 2,
     image: EgoHero,
     title: "EgoStream",
     description:
@@ -23,7 +15,7 @@ const projectsList = [
     githubLink: "https://github.com/LesegoLSG/Netflix_Project.git",
   },
   {
-    id: 3,
+    id: 2,
     image: ChatHiveImage,
     title: "Chat Application",
     description:
@@ -32,7 +24,7 @@ const projectsList = [
     githubLink: "https://github.com/LesegoLSG/ChatApplication.git",
   },
   {
-    id: 4,
+    id: 3,
     image: Converter,
     title: "Voive-Text Converter",
     description:
@@ -41,21 +33,30 @@ const projectsList = [
     githubLink: "https://github.com/LesegoLSG/Converter.git",
   },
   {
-    id: 5,
-    image: Graduation,
-    title: "Project 2",
-    description: "Description of Project 2",
-    liveLink: "https://example.com/project2",
-    githubLink: "https://github.com/project2",
+    id: 4,
+    image: Food,
+    title: "MealDash",
+    description:
+      "MealDash Application allows users to browse through a variety of food items, select their desired items, and add them to their cart. The application provides an intuitive and seamless front-end experience for users to explore and purchase food conveniently.",
+    liveLink: "https://lesegolsg.github.io/Food-app/",
+    githubLink: "https://github.com/LesegoLSG/Food-app.git",
   },
-  {
-    id: 6,
-    image: Graduation,
-    title: "Project 2",
-    description: "Description of Project 2",
-    liveLink: "https://example.com/project2",
-    githubLink: "https://github.com/project2",
-  },
+  // {
+  //   id: 5,
+  //   image: Graduation,
+  //   title: "Project 2",
+  //   description: "Description of Project 2",
+  //   liveLink: "https://example.com/project2",
+  //   githubLink: "https://github.com/project2",
+  // },
+  // {
+  //   id: 6,
+  //   image: Graduation,
+  //   title: "Project 2",
+  //   description: "Description of Project 2",
+  //   liveLink: "https://example.com/project2",
+  //   githubLink: "https://github.com/project2",
+  // },
 ];
 
 export default projectsList;

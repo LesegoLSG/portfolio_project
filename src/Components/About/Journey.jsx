@@ -52,7 +52,7 @@ const Journey = () => {
               <div className="flex justify-start items-center">
                 <CiCalendarDate className="" />
                 <p className="text-sm text-gray-700 dark:text-gray-300">
-                  2021-2000
+                  2023/06-2024/06
                 </p>
               </div>
               <h1 className="text-lg font-bold dark:text-white">
@@ -84,7 +84,7 @@ const Journey = () => {
               <div className="flex justify-start items-center">
                 <CiCalendarDate />
                 <p className="text-sm text-gray-700 dark:text-gray-300">
-                  2021-2000
+                  2023/06-2023/07
                 </p>
               </div>
               <h1 className="text-lg font-bold dark:text-white">
@@ -116,7 +116,7 @@ const Journey = () => {
               <div className="flex justify-start items-center">
                 <CiCalendarDate />
                 <p className="text-sm text-gray-700 dark:text-gray-300 ">
-                  2017-2021
+                  2017/02-2021/12
                 </p>
               </div>
               <h1 className="text-lg font-bold dark:text-white">
@@ -148,7 +148,7 @@ const Journey = () => {
               <div className="flex justify-start items-center">
                 <CiCalendarDate />
                 <p className="text-sm text-gray-700 dark:text-gray-300">
-                  2016-2017
+                  2016/02-2017/02
                 </p>
               </div>
               <h1 className="text-lg font-bold dark:text-white">

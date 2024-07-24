@@ -38,8 +38,13 @@ const NavBar = ({ isDarkMode }) => {
 
   return (
     <header className="bg-white dark:bg-neutral-800 w-full fixed top-0 left-0 text-white shadow-lg flex justify-between lg:justify-around items-center h-14 z-20">
-      <div className="flex items-center justify-center">
-        <img src={isDarkMode ? Logo2 : Logo1} width={120} />
+      <div className="flex items-center justify-center px-4">
+        <img
+          src={isDarkMode ? Logo2 : Logo1}
+          width={120}
+          onClick={() => handleNavigateActive("Home")}
+          className="cursor-pointer"
+        />
       </div>
 
       <div className="font-semibold text-sm lg:text-base hidden md:block">
@@ -61,7 +66,7 @@ const NavBar = ({ isDarkMode }) => {
 
       <div
         onClick={handleNav}
-        className="block md:hidden text-gray-300 dark:text-white fixed right-10 top-4 z-50"
+        className="block md:hidden text-gray-300 dark:text-white fixed right-4 md:right-10 top-4 z-50"
       >
         {isNav ? (
           <IoMdCloseCircleOutline size={30} className="dark:text-white" />
@@ -102,7 +107,7 @@ const NavBar = ({ isDarkMode }) => {
         </button>
       </div>
 
-      <div className="flex md:hidden justify-center w-full">
+      <div className="flex md:hidden justify-center w-full ">
         <button
           onClick={() => handleNavigateActive("Contact")}
           className="button-action"
