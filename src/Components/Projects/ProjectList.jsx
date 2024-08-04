@@ -3,6 +3,9 @@ import Food from "../../Assets/ProjectImages/Food.png";
 import EgoHero from "../../Assets/ProjectImages/EgoHero.png";
 import ChatHiveImage from "../../Assets/ProjectImages/ChatHiveImage.png";
 import Converter from "../../Assets/ProjectImages/Converter.png";
+import MusicApp from "../../Assets/ProjectImages/MusicApp.png";
+import Photography from "../../Assets/ProjectImages/Photography.png";
+import DaycareImage from "../../Assets/ProjectImages/DaycareImage.png";
 
 const projectsList = [
   {
@@ -41,22 +44,33 @@ const projectsList = [
     liveLink: "https://lesegolsg.github.io/Food-app/",
     githubLink: "https://github.com/LesegoLSG/Food-app.git",
   },
-  // {
-  //   id: 5,
-  //   image: Graduation,
-  //   title: "Project 2",
-  //   description: "Description of Project 2",
-  //   liveLink: "https://example.com/project2",
-  //   githubLink: "https://github.com/project2",
-  // },
-  // {
-  //   id: 6,
-  //   image: Graduation,
-  //   title: "Project 2",
-  //   description: "Description of Project 2",
-  //   liveLink: "https://example.com/project2",
-  //   githubLink: "https://github.com/project2",
-  // },
+  {
+    id: 5,
+    image: MusicApp,
+    title: "Music App",
+    description:
+      "A modern and responsive platform that offers a seamless music streaming experience. Designed with simplicity and usability in mind, our app allows you to explore, play, and enjoy your favorite tracks with ease.",
+    liveLink: "https://less-ego-music-app.netlify.app/",
+    githubLink: "https://github.com/LesegoLSG/MusicPlayerRepo.git",
+  },
+  {
+    id: 6,
+    image: Photography,
+    title: "Photographer Portfolio",
+    description:
+      "Capturing the essence of every moment through stunning photography and engaging videography. Explore this website to see the world through my lens.",
+    liveLink: "https://diyashodiholo.netlify.app/",
+    githubLink: "https://github.com/LesegoLSG/Photographer.git",
+  },
+  {
+    id: 7,
+    image: DaycareImage,
+    title: "Daycare Center Blog",
+    description:
+      "The Star Bright Daycare Blog, offers parents and caregivers valuable insights, tips, and resources on child development, health and safety, learning activities, and more.",
+    liveLink: "https://star-bright.netlify.app/",
+    githubLink: "https://github.com/LesegoLSG/DayCare-Web.git",
+  },
 ];
 
 export default projectsList;

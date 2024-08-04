@@ -17,7 +17,9 @@ const ProjectCard = ({ singleProject }) => {
           <img
             src={singleProject.image}
             alt=""
-            className="w-full h-full object-fit rounded-t-lg"
+            className={`w-full h-full object-fit rounded-t-lg transition-opacity duration-300 ${
+              isHovered ? "opacity-25" : "opacity-100"
+            }`}
           />
           {!isHovered && (
             <div className="absolute inset-0 flex flex-col justify-center items-center px-4 py-6">
@@ -34,7 +36,7 @@ const ProjectCard = ({ singleProject }) => {
             <h2 className="text-2xl font-bold mb-2 text-secondary">
               {singleProject.title}
             </h2>
-            <p className="text-primary mb-4 font-semibold">
+            <p className="text-black mb-4 font-semibold">
               {singleProject.description}
             </p>
             <div className="flex justify-center space-x-4">
