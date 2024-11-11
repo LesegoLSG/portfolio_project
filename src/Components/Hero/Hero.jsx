@@ -64,7 +64,7 @@ const Hero = () => {
           ref={introRef}
         >
           <motion.p
-            className="text-xl md:text-2xl font-semibold text-secondary dark:text-white"
+            className="text-xl md:text-2xl font-semibold text-secondary"
             initial={{ y: -100 }}
             whileInView={{ y: 0 }}
             transition={{ duration: 2 }}

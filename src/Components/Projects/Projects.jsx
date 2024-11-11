@@ -32,7 +32,7 @@ const Projects = () => {
       className="bg-accent w-full h-auto  py-20 px-10 md:px-20 dark:bg-neutral-900"
     >
       <div className="w-full h-auto flex flex-col justify-center items-center">
-        <h1 className="text-2xl font-extrabold dark:text-white">
+        <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white">
           My <span className="text-secondary">Work</span>
         </h1>
         <p className="mt-4 text-lg text-gray-600 dark:text-gray-300 font-semibold">

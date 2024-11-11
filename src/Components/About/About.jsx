@@ -6,23 +6,6 @@ import blobSvg from "../../Assets/blob.svg";
 import { motion } from "framer-motion";
 
 const About = () => {
-  const [blobUrl, setBlobUrl] = useState("");
-
-  useEffect(() => {
-    // Read the SVG file as a string
-    fetch(blobSvg)
-      .then((response) => response.text())
-      .then((data) => {
-        // Encode the SVG file to base64
-        const encodedData = btoa(data);
-        // Construct the data URL
-        const url = `url('data:image/svg+xml;base64,${encodedData}')`;
-        // Set the blobUrl state
-        setBlobUrl(url);
-      })
-      .catch((error) => console.error("Error fetching SVG file:", error));
-  }, []);
-
   const containerVariants = {
     hidden: {
       scale: 0.3,
@@ -52,7 +35,7 @@ const About = () => {
   return (
     <section
       id="About"
-      className="bg-white dark:bg-neutral-800 w-full h-auto pt-20 px-10 md:px-20 overflow-hidden"
+      className="w-full h-auto bg-white dark:bg-neutral-800   pt-20 px-10 md:px-20 overflow-hidden"
     >
       <div className="flex flex-col justify-center items-center">
         <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white">
@@ -63,24 +46,18 @@ const About = () => {
         </p>
       </div>
       {/* Main div */}
-      <div className="w-full h-auto flex flex-col md:flex-row justify-center items-center md:pt-10">
-        {/* left or image div */}
+      <div className="w-full  h-auto grid grid-cols-1 md:grid-cols-2 gap-x-2">
         <motion.div
-          className="w-full md:w-1/2 flex justify-center items-center"
+          className="w-full flex justify-center items-center"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
         >
-          <img
-            className=""
-            src={AboutMeImage}
-            style={{ width: "100%", maxWidth: "500px" }}
-            alt="Lesego Mhlongo"
-          />
+          <img src={AboutMeImage} className="object-fit" />
         </motion.div>
-        {/* Right div */}
-        <div className="w-full md:w-1/2 md:pl-10 pt-10 md:pt-0">
-          <h1 className="text-2xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+
+        <div className="w-full md:w-4/5 flex flex-col justify-center items-start">
+          <h1 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white mb-4">
             Discover My<span className="text-secondary"> Story</span>
           </h1>
           <motion.p

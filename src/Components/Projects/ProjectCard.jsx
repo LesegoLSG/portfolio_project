@@ -8,9 +8,9 @@ const ProjectCard = ({ singleProject }) => {
   const [isHovered, setIsHovered] = useState(false);
   return (
     <ParallaxProvider>
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center bg-transparent">
         <div
-          className="w-[550px] h-[400px] relative overflow-hidden bg-white rounded-lg  transition-transform transform hover:-translate-x-2 shadow-custom"
+          className="w-[550px] h-[400px] relative overflow-hidden  rounded-lg  transition-transform transform hover:-translate-x-2 shadow-custom"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
@@ -23,7 +23,7 @@ const ProjectCard = ({ singleProject }) => {
           />
           {!isHovered && (
             <div className="absolute inset-0 flex flex-col justify-center items-center px-4 py-6">
-              <h2 className="text-2xl font-bold mb-2 text-secondary">
+              <h2 className="text-2xl font-bold mb-2 text-primary">
                 {singleProject.title}
               </h2>
             </div>
@@ -36,18 +36,21 @@ const ProjectCard = ({ singleProject }) => {
             <h2 className="text-2xl font-bold mb-2 text-secondary">
               {singleProject.title}
             </h2>
-            <p className="text-black mb-4 font-semibold">
+            <p className="text-black dark:text-white mb-4 font-semibold">
               {singleProject.description}
             </p>
+
             <div className="flex justify-center space-x-4">
-              <a
-                href={singleProject.liveLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="  text-primary rounded hover:scale-110 transition-colors duration-300"
-              >
-                <BiPlayCircle size={25} />
-              </a>
+              {singleProject.liveLink !== "" && (
+                <a
+                  href={singleProject.liveLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="  text-primary rounded hover:scale-110 transition-colors duration-300"
+                >
+                  <BiPlayCircle size={25} />
+                </a>
+              )}
 
               <a
                 href={singleProject.githubLink}

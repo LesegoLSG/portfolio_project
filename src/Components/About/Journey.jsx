@@ -28,7 +28,7 @@ const Journey = () => {
   return (
     <div className=" ">
       <div className="w-full h-auto flex justify-center items-center">
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
+        <h1 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white mb-4">
           My <span className="text-secondary"> Journey </span>{" "}
         </h1>
       </div>
